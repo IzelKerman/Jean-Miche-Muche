@@ -121,11 +121,12 @@ def animation3(i):
 fig = plt.figure(dpi=300)
 ax = fig.add_subplot(111)
 
-Writer = anim.writers['ffmpeg']
-writer = Writer(fps=30, metadata=dict(artist='Me'), bitrate=1000)
+# if you have ffmpeg instaled
+# Writer = anim.writers['ffmpeg']
+# writer = Writer(fps=30, metadata=dict(artist='Me'), bitrate=1000)
 
 ani = anim.FuncAnimation(fig, animation3, interval=100, frames=1000)
-ani.save('double_10(best_but_even_better).mp4', writer=writer)
+# ani.save('double_10(best_but_even_better).mp4', writer=writer)
 plt.show()
 
 
